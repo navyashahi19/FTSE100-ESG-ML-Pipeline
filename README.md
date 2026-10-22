@@ -4,7 +4,7 @@
 
 **MSc Dissertation | International Corporate Finance and Banking | University of Glasgow**
 
-**Python · Financial Analytics · Econometrics · Machine Learning · Explainable AI**
+**Python · Financial Analytics · Econometrics · Machine Learning · Model Interpretability · ESG · Portfolio Analytics**
 
 ## About the Project
 
