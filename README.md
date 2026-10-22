@@ -47,7 +47,7 @@ FTSE100-ESG-ML-Pipeline/
 ├── data/
 │   └── Data.xlsx
 ├── expected_outputs/
-└── saved_colab_outputs/
+└── saved_model_outputs/
 ```
 
 - **Notebook:** Main dissertation analysis and modelling pipeline.
