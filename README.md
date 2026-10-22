@@ -53,7 +53,7 @@ FTSE100-ESG-ML-Pipeline/
 - **Notebook:** Main dissertation analysis and modelling pipeline.
 - **data/:** Source financial and ESG dataset.
 - **expected_outputs/:** Reference results from the analysis.
-- **saved_colab_outputs/:** Saved XGBoost and SHAP outputs.
+- **saved_model_outputs/:** Saved XGBoost and SHAP outputs.
 
 ## Getting Started
 
