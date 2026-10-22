@@ -1,0 +1,28 @@
+feature,mean_abs_shap
+log_mktcap,1.9572465626853321
+Human Rights Policy Score,1.7744858290133971
+Policy Data Privacy Score,1.3604471521742345
+Waste Total,0.6578355932111751
+Product Responsibility Score,0.5675556054492484
+CO2 Equivalent Emissions Total,0.3604584417568311
+Environmental Pillar Score,0.32671214653989955
+ESG Score,0.3263710538116095
+Social Pillar Score,0.2966905708022738
+Board Size,0.27809145862324425
+Governance Pillar Score,0.26615108205472743
+Independent Board Members,0.18780637304133765
+sector_Financials,0.14448687746268765
+sector_Consumer Staples,0.07434050763099455
+sector_Real Estate,0.06738473235133845
+sector_Materials,0.05481233872464967
+CSR Sustainability Committee,0.05301651414038027
+sector_Industrials,0.044249726457574905
+sector_Consumer Discretionary,0.027190805185853758
+Renewable Energy Use,0.02627851855152219
+sector_Information Technology,0.017886728886644068
+sector_Energy,0.014287625043798295
+sector_Unknown,0.008420269981319334
+sector_Health Care,0.0071367829938319026
+sector_Utilities,0.004495738774640513
+Health & Safety Policy,0.0024260957822885574
+Shareholder Rights Policy,0.0
