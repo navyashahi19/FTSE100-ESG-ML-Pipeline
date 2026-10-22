@@ -93,4 +93,16 @@ Open `FTSE100_ESG_ML_Pipeline.ipynb` to explore the research and code.
 
 One of the most valuable lessons from this project was that **more sophisticated models do not necessarily make financial markets easy to predict**.
 
-Although
+Although XGBoost performed best among the models evaluated, its modest predictive power reinforced the importance of robust validation, interpretability, and recognising the limitations of financial data.
+
+The research strengthened my interest in the intersection of quantitative finance, machine learning, and sustainable investing, and in applying data-driven methods to real-world financial questions.
+
+Author
+
+Navya Shahi
+MSc International Corporate Finance and Banking
+University of Glasgow
+
+Dissertation Grade: A5 – Excellent
+
+This project is intended for academic research and portfolio demonstration, not financial or investment advice. Data sourced from LSEG Workspace; redistribution and reuse are subject to applicable licensing permissions.
