@@ -1,53 +1,47 @@
 # FTSE 100 ESG & Machine Learning Pipeline
 
+### Beyond Ratings: Can Machine Learning Unlock the True Value of ESG in Predicting FTSE 100 Returns?
+
 **MSc Dissertation | International Corporate Finance and Banking | University of Glasgow**
 
-**Python | Financial Analytics | Machine Learning | Econometrics | Explainable AI**
+**Python · Financial Analytics · Econometrics · Machine Learning · Explainable AI**
 
-## Project Overview
+## About the Project
 
-This project investigates the relationship between Environmental, Social and Governance (ESG) performance and financial characteristics of FTSE 100 companies.
+Can machine learning uncover useful ESG signals that traditional sustainability ratings might overlook?
 
-Using financial and ESG data from **LSEG Workspace**, the research combines traditional econometric techniques with machine-learning models to explore predictive relationships, evaluate model performance, and interpret the contribution of ESG indicators.
+This question inspired my MSc dissertation, which explored whether Environmental, Social and Governance (ESG) information could help predict FTSE 100 stock returns.
 
-The analysis was developed in **Python using Jupyter Notebook** as part of my MSc dissertation.
+Using **875 firm-year observations across 99 FTSE 100 companies**, I combined traditional econometric techniques with machine-learning models to investigate predictive relationships, identify influential ESG characteristics, and explore their potential relevance to investment decisions.
 
-## Research Objectives
+The analysis was developed using **Python and Jupyter Notebook**, with financial and ESG data sourced from LSEG Workspace.
 
-- Examine relationships between ESG indicators and financial outcomes.
-- Compare econometric and machine-learning approaches.
-- Evaluate predictive performance using time-aware validation.
-- Interpret model predictions through explainable AI.
-- Explore the financial relevance of model outputs through portfolio backtesting.
+## Key Findings
+
+- **XGBoost delivered the strongest average out-of-sample performance**, achieving an R² of **0.036** and RMSE of **30.63**. The modest explanatory power highlights the challenges of predicting financial returns, even with advanced machine-learning techniques.
+
+- **Individual ESG characteristics provided meaningful model insights.** Human Rights Policy, Product Responsibility, and Data Privacy Policy were among the important ESG contributors to predictions, suggesting that looking beyond composite ESG ratings may be valuable.
+
+- **Exploratory portfolio results were encouraging.** An XGBoost-based portfolio achieved a Sharpe ratio of **2.09**, compared with **1.71** for an equally weighted benchmark. However, the backtest covered only six annual observations, so these results should be interpreted cautiously.
 
 ## Methodology
 
-| Component | Methods |
+| Area | Techniques |
 |---|---|
 | Data preparation | pandas, NumPy, openpyxl |
-| Econometrics | OLS Regression, LASSO |
+| Econometrics | OLS, LASSO |
 | Machine learning | Random Forest, Gradient Boosting, XGBoost |
 | Model validation | Walk-forward cross-validation |
-| Explainable AI | SHAP |
-| Financial analysis | Portfolio backtesting and robustness testing |
+| Model interpretation | SHAP |
+| Investment analysis | Portfolio backtesting and robustness testing |
 | Visualisation | Matplotlib |
 
-The workflow covers data cleaning, feature preparation, model training, performance evaluation, and interpretation.
-
-## Dataset
-
-**Source:** LSEG Workspace  
-**Coverage:** FTSE 100 companies
-
-The dataset includes ESG scores, environmental, social and governance pillar scores, company financial measures, stock-return information, and sector classifications.
-
-Data availability and reporting periods vary across companies.
+The workflow covers data cleaning, feature preparation, model training, out-of-sample evaluation, and interpretation of model predictions.
 
 ## Repository Structure
 
 ```text
 FTSE100-ESG-ML-Pipeline/
-│
 ├── FTSE100_ESG_ML_Pipeline.ipynb
 ├── README.md
 ├── data/
@@ -56,9 +50,9 @@ FTSE100-ESG-ML-Pipeline/
 └── saved_colab_outputs/
 ```
 
-- **Notebook:** Complete research and modelling workflow.
-- **data/:** Source Excel dataset.
-- **expected_outputs/:** Reference analysis results.
+- **Notebook:** Main dissertation analysis and modelling pipeline.
+- **data/:** Source financial and ESG dataset.
+- **expected_outputs/:** Reference results from the analysis.
 - **saved_colab_outputs/:** Saved XGBoost and SHAP outputs.
 
 ## Getting Started
@@ -70,7 +64,7 @@ git clone https://github.com/navyashahi19/FTSE100-ESG-ML-Pipeline.git
 cd FTSE100-ESG-ML-Pipeline
 ```
 
-Install the required packages:
+Install the dependencies:
 
 ```bash
 pip install pandas numpy scipy scikit-learn openpyxl matplotlib xgboost shap jupyter
@@ -82,32 +76,21 @@ Launch Jupyter Notebook:
 jupyter notebook
 ```
 
-Open `FTSE100_ESG_ML_Pipeline.ipynb` to explore the analysis.
+Open `FTSE100_ESG_ML_Pipeline.ipynb` to explore the research and code.
 
-**Execution status:** The complete notebook is undergoing reproducibility validation, including an update to the Excel data-import process. Previously generated results are available in the repository for reference.
+**Reproducibility note:** The notebook's end-to-end execution is currently being validated, including an update to the Excel data-import process. Previously generated outputs are available for reference.
 
 ## Skills Demonstrated
 
 - Financial data analysis and quantitative research
 - Python programming and data preprocessing
-- Econometric modelling and statistical analysis
-- Machine-learning model development and evaluation
-- Time-series-aware validation
-- Explainable AI and feature interpretation
+- Econometric and machine-learning modelling
+- Out-of-sample validation and performance evaluation
+- Explainable AI using SHAP
 - Portfolio analytics and investment research
 
-## Limitations
+## Reflections
 
-ESG scores are dependent on provider methodologies, and financial relationships may vary across market conditions. Predictive associations do not establish causality, and historical backtesting does not guarantee future investment performance.
+One of the most valuable lessons from this project was that **more sophisticated models do not necessarily make financial markets easy to predict**.
 
-## Author
-
-**Navya Shahi**  
-MSc International Corporate Finance and Banking  
-University of Glasgow
-
----
-
-*Academic research project. Not financial or investment advice.*
-
-*Data sourced from LSEG Workspace. Redistribution and reuse are subject to applicable licensing permissions.*
+Although
