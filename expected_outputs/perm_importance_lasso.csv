@@ -1,0 +1,28 @@
+feature,importance_mean,importance_std
+log_mktcap,0.01818922098109802,0.029983153596602388
+sector_Real Estate,0.007902052774461755,0.010046434076172008
+ESG Score,0.006435909233699888,0.0038094596254304074
+sector_Financials,0.0034198297693042836,0.0015278748979444768
+CO2 Equivalent Emissions Total,0.002119560162529599,0.00678807660007027
+Waste Total,0.0015923408561209329,0.0031093958747669815
+Social Pillar Score,0.001528294322565349,0.0009175300632609022
+sector_Information Technology,0.0005607569581768778,0.0007980457075030703
+sector_Utilities,7.3829048355400495e-06,0.0005732264924525087
+Governance Pillar Score,0.0,0.0
+Environmental Pillar Score,0.0,0.0
+sector_Industrials,0.0,0.0
+Health & Safety Policy,0.0,0.0
+Renewable Energy Use,0.0,0.0
+Board Size,0.0,0.0
+Independent Board Members,0.0,0.0
+CSR Sustainability Committee,0.0,0.0
+sector_Consumer Discretionary,0.0,0.0
+Shareholder Rights Policy,0.0,0.0
+sector_Materials,0.0,0.0
+sector_Health Care,0.0,0.0
+sector_Energy,0.0,0.0
+sector_Consumer Staples,0.0,0.0
+sector_Unknown,0.0,0.0
+Policy Data Privacy Score,-0.00012887716718831265,0.00019553878755211392
+Human Rights Policy Score,-0.0026464766882698942,0.0029968389560446115
+Product Responsibility Score,-0.006562754696843942,0.0042559689419082395
