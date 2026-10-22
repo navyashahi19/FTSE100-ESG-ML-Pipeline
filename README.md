@@ -1,67 +1,113 @@
-# FTSE 100 ESG and Machine Learning Pipeline
+# FTSE 100 ESG & Machine Learning Pipeline
+
+**MSc Dissertation | International Corporate Finance and Banking | University of Glasgow**
+
+**Python | Financial Analytics | Machine Learning | Econometrics | Explainable AI**
 
 ## Project Overview
 
-This repository contains the Python analysis pipeline developed for my MSc dissertation in International Corporate Finance and Banking at the University of Glasgow.
+This project investigates the relationship between Environmental, Social and Governance (ESG) performance and financial characteristics of FTSE 100 companies.
 
-The project investigates the relationship between Environmental, Social and Governance (ESG) factors and the financial performance of FTSE 100 companies using statistical analysis and machine learning.
+Using financial and ESG data from **LSEG Workspace**, the research combines traditional econometric techniques with machine-learning models to explore predictive relationships, evaluate model performance, and interpret the contribution of ESG indicators.
 
-## Research Methods
+The analysis was developed in **Python using Jupyter Notebook** as part of my MSc dissertation.
 
-The analysis includes:
+## Research Objectives
 
-- ESG and financial data cleaning and preparation
-- Panel dataset construction
-- Ordinary Least Squares (OLS) regression
-- LASSO regression
-- Random Forest
-- Gradient Boosting and XGBoost
-- Walk-forward cross-validation
-- Portfolio backtesting
-- Robustness and statistical significance testing
-- SHAP-based model interpretation
+- Examine relationships between ESG indicators and financial outcomes.
+- Compare econometric and machine-learning approaches.
+- Evaluate predictive performance using time-aware validation.
+- Interpret model predictions through explainable AI.
+- Explore the financial relevance of model outputs through portfolio backtesting.
+
+## Methodology
+
+| Component | Methods |
+|---|---|
+| Data preparation | pandas, NumPy, openpyxl |
+| Econometrics | OLS Regression, LASSO |
+| Machine learning | Random Forest, Gradient Boosting, XGBoost |
+| Model validation | Walk-forward cross-validation |
+| Explainable AI | SHAP |
+| Financial analysis | Portfolio backtesting and robustness testing |
+| Visualisation | Matplotlib |
+
+The workflow covers data cleaning, feature preparation, model training, performance evaluation, and interpretation.
+
+## Dataset
+
+**Source:** LSEG Workspace  
+**Coverage:** FTSE 100 companies
+
+The dataset includes ESG scores, environmental, social and governance pillar scores, company financial measures, stock-return information, and sector classifications.
+
+Data availability and reporting periods vary across companies.
 
 ## Repository Structure
 
 ```text
 FTSE100-ESG-ML-Pipeline/
+│
 ├── FTSE100_ESG_ML_Pipeline.ipynb
 ├── README.md
 ├── data/
 │   └── Data.xlsx
-├── saved_colab_outputs/
-└── expected_outputs/
+├── expected_outputs/
+└── saved_colab_outputs/
 ```
 
-## Technologies Used
+- **Notebook:** Complete research and modelling workflow.
+- **data/:** Source Excel dataset.
+- **expected_outputs/:** Reference analysis results.
+- **saved_colab_outputs/:** Saved XGBoost and SHAP outputs.
 
-Python, Jupyter Notebook, pandas, NumPy, SciPy, scikit-learn, XGBoost, SHAP, Matplotlib and openpyxl.
+## Getting Started
 
-## How to Run
-
-1. Clone or download the repository.
-2. Install the required Python libraries:
+Clone the repository:
 
 ```bash
-pip install pandas numpy scipy scikit-learn openpyxl matplotlib xgboost shap
+git clone https://github.com/navyashahi19/FTSE100-ESG-ML-Pipeline.git
+cd FTSE100-ESG-ML-Pipeline
 ```
 
-3. Open `FTSE100_ESG_ML_Pipeline.ipynb` in Jupyter Notebook or JupyterLab.
-4. Run the notebook cells sequentially.
-5. Compare the generated results against the files in `expected_outputs/`.
+Install the required packages:
 
-The `saved_colab_outputs/` folder contains previously generated XGBoost and SHAP results used by the notebook.
+```bash
+pip install pandas numpy scipy scikit-learn openpyxl matplotlib xgboost shap jupyter
+```
 
-## Data Source
+Launch Jupyter Notebook:
 
-The research uses ESG and financial information obtained from LSEG Workspace. Data and derived outputs are subject to applicable licensing and redistribution permissions.
+```bash
+jupyter notebook
+```
+
+Open `FTSE100_ESG_ML_Pipeline.ipynb` to explore the analysis.
+
+**Execution status:** The complete notebook is undergoing reproducibility validation, including an update to the Excel data-import process. Previously generated results are available in the repository for reference.
+
+## Skills Demonstrated
+
+- Financial data analysis and quantitative research
+- Python programming and data preprocessing
+- Econometric modelling and statistical analysis
+- Machine-learning model development and evaluation
+- Time-series-aware validation
+- Explainable AI and feature interpretation
+- Portfolio analytics and investment research
+
+## Limitations
+
+ESG scores are dependent on provider methodologies, and financial relationships may vary across market conditions. Predictive associations do not establish causality, and historical backtesting does not guarantee future investment performance.
 
 ## Author
 
-Navya Shahi  
+**Navya Shahi**  
 MSc International Corporate Finance and Banking  
 University of Glasgow
 
-## Purpose
+---
 
-This repository documents the research methodology, machine learning implementation and reproducibility workflow developed for the dissertation.
+*Academic research project. Not financial or investment advice.*
+
+*Data sourced from LSEG Workspace. Redistribution and reuse are subject to applicable licensing permissions.*
